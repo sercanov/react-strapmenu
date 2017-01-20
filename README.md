@@ -3,19 +3,24 @@
 
 [![npm version](https://badge.fury.io/js/react-strapmenu.svg)](https://badge.fury.io/js/react-strapmenu)
 
-[Bootstrap](https://github.com/react-bootstrap/react-bootstrap) dropdown menu generator for [react-router](https://github.com/ReactTraining/react-router)
+Usable [bootstrap](https://github.com/react-bootstrap/react-bootstrap) dropdown menu generator for [react-router](https://github.com/ReactTraining/react-router)
 
 ###but why?
-It's just another automated everyday-task. 
-A lot of little kittens developing navigation menus synced with routes, every single day.
+It's just another automated everyday-task. Simple but everyday, literally. According to statistics, currently **18312** kittens coding routes.js. No joke.
+A lot of kittens with their tiny paws on keyboards.
 
 ###but how?
-It basically loops through the given routes to generate cute little dropdown menu. 
+It basically loops through child routes to generate cute dropdown menu. 
 like dis ;
 
 ![react-strapmenu](https://raw.githubusercontent.com/sercanov/react-strapmenu/master/example/preview.png)
 
+Okay it's default. Not cute.
+
 ###teach me
+
+**Installation**
+
 ```javascript
 yarn add react-strapmenu
 ```
@@ -23,8 +28,8 @@ yarn add react-strapmenu
 ```javascript
 npm install react-strapmenu --save
 ```
-then, in your entry point - where routes are defined - expose which routes you want to include in menu.
-like dis ;
+
+----------
 
 **Index.js**
 ```javascript
@@ -49,12 +54,16 @@ ReactDOM.render((
 );
 
 ```
+
+In your entry point ( where routes are defined ) expose which routes you want to include.
+like dis ;
+
 ####Route props
 
-- **exposed**: indicates that you want it in the menu. 
+- **exposed**: appends to menu if true.
 - **name**: name of your menu item.
-- **icon**: icon of your menu item. accepts any css icon class name. ex. `ion-users` , `fa fa-users` , `glyphicon glyphicon-users` ( related icon set should be included in your project ) 
-- **divideAfter**: set menu item divider after that item, exposed or not.
+- **icon**: class name of the icon. iconset should be included in the codebase. ex. `ion-users` , `fa fa-users` , `glyphicon glyphicon-users`
+- **divideAfter**: appends menu divider after that item, doesn't need to exposed.
 
 ----------
 
@@ -85,9 +94,12 @@ class App extends Component {
 
 export default App;
 ```
+
+Import and render with routes.
+
 ####Component props
 
-- **routes (required)**: you have to pass the routes to the component, which can be passed by `this.props.routes`
+- **routes (required)**: you have to pass the routes to the component. `this.props.routes` 🤔
 - **dropdownProps**: props you want to pass to [`<NavDropdown />`][https://react-bootstrap.github.io/components.html#navs-dropdown]
 
 ----------
