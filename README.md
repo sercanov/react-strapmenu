@@ -15,8 +15,6 @@ like dis ;
 
 ![react-strapmenu](https://raw.githubusercontent.com/sercanov/react-strapmenu/master/example/preview.png)
 
-----------
-
 ###teach me
 ```javascript
 yarn add react-strapmenu
@@ -25,7 +23,7 @@ yarn add react-strapmenu
 ```javascript
 npm install react-strapmenu --save
 ```
-then, in your entry point - where the routes are defined - you'll need to expose which routes you want to include in menu.
+then, in your entry point - where routes are defined - expose which routes you want to include in menu.
 like dis ;
 
 **Index.js**
@@ -57,6 +55,8 @@ ReactDOM.render((
 - **name**: name of your menu item.
 - **icon**: icon of your menu item. accepts any css icon class name. ex. `ion-users` , `fa fa-users` , `glyphicon glyphicon-users` ( related icon set should be included in your project ) 
 - **divideAfter**: set menu item divider after that item, exposed or not.
+
+----------
 
 **App.js**
 ```javascript
