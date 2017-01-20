@@ -54,7 +54,7 @@ class Strapmenu extends React.Component {
 
         if (!this.props.routes) {
             console.error('gimme routs')
-            return <div>No routes found</div>
+            return <div>ERRÖR : No routes found</div>
         }
 
         const _routes = this.calculateRoutes()
