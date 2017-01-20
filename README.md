@@ -90,6 +90,7 @@ export default App;
 - **routes (required)**: you have to pass the routes to the component, which can be passed by `this.props.routes`
 - **dropdownProps**: props you want to pass to [`<NavDropdown />`][https://react-bootstrap.github.io/components.html#navs-dropdown]
 
+----------
 
 ### TODO 
 - [ ] Iconless layout
