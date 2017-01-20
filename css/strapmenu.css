@@ -1,0 +1,11 @@
+.menu-item-icon {
+    display: inline-block;
+    width: 20px;
+    margin-right: 10px;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+.menu-item-title {
+	display: inline-block;
+}
