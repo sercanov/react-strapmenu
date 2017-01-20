@@ -4,7 +4,7 @@
 
 ###but why?
 It's just another automated everyday-task. 
-A lot kittens developing navigation menus synced with routes, every single day.
+A lot of little kittens developing navigation menus synced with routes, every single day.
 
 ###but how?
 It basically loops through the given routes to generate cute little dropdown menu. 
@@ -52,7 +52,7 @@ ReactDOM.render((
 
 - **exposed**: indicates that you want it in the menu. 
 - **name**: name of your menu item.
-- **icon**: icon of your menu item. accepts any css icon class name. ex. `ion-users` , `fa fa-users` , `glyphicon glyphicon-users`
+- **icon**: icon of your menu item. accepts any css icon class name. ex. `ion-users` , `fa fa-users` , `glyphicon glyphicon-users` ( related icon set should be included in your project ) 
 - **divideAfter**: set menu item divider after that item, exposed or not.
 
 **App.js**
@@ -66,17 +66,16 @@ class App extends Component {
     return (
       <div className="App">
 
-        <Navbar fixedTop inverse >
-        
+        <Navbar fixedTop inverse>  
           <Navbar.Collapse>
             <Nav pullRight>
               <NavbarGenerator routes={this.props.routes} />
             </Nav>
           </Navbar.Collapse>
- 
         </Navbar>
 
-        <div className="App-header">Insert content here</div>
+        <div className="App-header">Insert content here</div>     
+      </div>
     );
   }
 }
@@ -91,4 +90,5 @@ export default App;
 
 ### TODO 
 - [ ] Iconless layout
+- [ ] Example project
 - [ ] [Tell Me](https://www.youtube.com/watch?v=PXXdYttPTgc)
