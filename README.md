@@ -1,5 +1,8 @@
 
 #react-strapmenu
+
+[![npm version](https://badge.fury.io/js/react-strapmenu.svg)](https://badge.fury.io/js/react-strapmenu)
+
 [Bootstrap](https://github.com/react-bootstrap/react-bootstrap) dropdown menu generator for [react-router](https://github.com/ReactTraining/react-router)
 
 ###but why?
