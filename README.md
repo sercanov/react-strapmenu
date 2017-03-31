@@ -1,15 +1,15 @@
 
-#react-strapmenu
+# react-strapmenu
 
 [![npm version](https://badge.fury.io/js/react-strapmenu.svg)](https://badge.fury.io/js/react-strapmenu)
 
 Usable [bootstrap](https://github.com/react-bootstrap/react-bootstrap) dropdown menu generator for [react-router](https://github.com/ReactTraining/react-router)
 
-###but why?
+### but why?
 It's just another automated everyday-task. Simple but everyday, literally. According to statistics, currently **18312** kittens coding routes.js. No joke.
 A lot of kittens with their tiny paws on keyboards.
 
-###but how?
+### but how?
 It basically loops through child routes to generate cute dropdown menu. 
 like dis ;
 
@@ -17,7 +17,7 @@ like dis ;
 
 Okay it's default. Not cute.
 
-###teach me
+### teach me
 
 **Installation**
 
@@ -58,7 +58,7 @@ ReactDOM.render((
 In your entry point ( where routes are defined ) expose which routes you want to include.
 like dis ;
 
-####Route props
+#### Route props
 
 - **exposed**: appends to menu if true.
 - **name**: name of your menu item.
@@ -97,7 +97,7 @@ export default App;
 
 Import and render with routes.
 
-####Component props
+#### Component props
 
 - **routes (required)**: you have to pass the routes to the component. `this.props.routes` 🤔
 - **dropdownProps**: props you want to pass to [`<NavDropdown />`][https://react-bootstrap.github.io/components.html#navs-dropdown]
